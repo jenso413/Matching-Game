@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    font-family: sans-serif;
+}
+
+/* Title */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    color: white;
+}
+
+.title h1 {
+    font-size: 4rem;
+}
+
+/* Card Container */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 1rem;
+    perspective: 1000px;
+}
+
+.card {
+    min-width: 23%;
+    flex: 1;
+    height: 250px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.front-face, 
+.back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
