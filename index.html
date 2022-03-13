@@ -9,16 +9,34 @@
 </head>
 <body>
     <section class="title">
-        <h1>Matching game</h1>
-        <p>Match the cards and win the game!</p>
+        <h1>Matching Cat Game</h1>
+        <p>Match the cats and win the game!</p>
     </section>
-    <section class="image-container">
-        <img src="http://placekitten.com/200/300" alt="Cat">
-        <img src="http://placekitten.com/200/300" alt="Cat">
-        <img src="http://placekitten.com/200/300" alt="Cat">
-        <img src="http://placekitten.com/200/300" alt="Cat">
-        <img src="http://placekitten.com/200/300" alt="Cat">
-        <img src="http://placekitten.com/200/300" alt="Cat">
+    <section class="card-container">
+        <div class="card" data-breed= 'persian'>
+            <img class='front-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/White_Persian_Cat.jpg/220px-White_Persian_Cat.jpg" alt="Persian Cat">
+            <img class='back-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="">
+        </div>
+        <div class="card" data-breed= 'persian'>
+            <img class='front-face' src="https://images.unsplash.com/photo-1591429939960-b7d5add10b5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc2lhbiUyMGNhdHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Persian Cat">
+            <img class='back-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="">
+        </div>
+        <div class="card" data-breed ='siamese'>
+            <img class='front-face' src="https://images.unsplash.com/photo-1572590603603-f828f6682212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2lhbWVzZSUyMGNhdHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Siamese Cat">
+            <img class='back-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="">
+        </div>
+        <div class="card" data-breed ='siamese'>
+            <img class='front-face' src="https://lolcats.com/wp-content/uploads/2021/08/siamese-scaled-1.jpg" alt="Siamese Cat">
+            <img class='back-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="">
+        </div>
+        <div class="card" data-breed ='maine-coon'>
+            <img class='front-face' src="https://azure.wgp-cdn.co.uk/app-yourcat/posts/iStock-1031592516.jpg?&width=480&height=480&bgcolor=ffffff&mode=crop&format=webp&webp.quality=40&scale=both" alt="Maine Coon Cat">
+            <img class='back-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="">
+        </div>
+        <div class="card" data-breed ='maine-coon'>
+            <img class='front-face' src="https://cattime.com/assets/uploads/gallery/maine-coon-cats-and-kittens/maine-coon-cats-and-kittens-5.jpg" alt="Maine Coon Cat">
+            <img class='back-face' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="">
+        </div>
     </section>
     <section class="display-score">
         <p id="score-counter">Score: 0</p>

@@ -32,18 +32,39 @@ body {
     font-weight: 500;
 }
 
-/* Image Container */
+/* Card Container */
 
-.image-container {
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
     width: 40%;
+    perspective: 1000px;
 }
 
-.image-container img {
-    flex-basis: 31%;
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.front-face, .back-face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.card.flip {
+    transform: rotateY(180deg);
 }
 
 /* Display Score */
